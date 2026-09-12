@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wenlin Chen | FaceMe – Design System</title>
+<meta name="description" content="FaceMe Design System 案例：整合元件、樣式與設計規範，建立統一且可延展的設計語言。依 Figma 設計稿製作。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="../index.html#top" class="logo" aria-label="回到首頁">
+      <img class="logo-mark" src="images/wlc.png" alt="WLC">
+      <span class="logo-text">Design Portfolio</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主選單">
+      <ul>
+        <li><a href="../index.html#work" class="nav-link">Work</a></li>
+        <li><a href="../index.html#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="../Resume/Wenlin%20Chen_Resume.pdf" class="btn btn-primary btn-sm" download="Wenlin Chen_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title reveal">FaceMe – Design System</h1>
+      <p class="hero-desc reveal reveal-delay-1">透過設計系統整合元件、樣式與設計規範，建立統一且可延展的設計語言，靈活應用於不同媒介與情境，延續一致的品牌體驗。</p>
+
+      <div class="meta-row reveal reveal-delay-2">
+        <div class="meta-item">
+          <div class="meta-label">My Role</div>
+          <div class="meta-value">UI Design ·  Design System</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Project Type</div>
+          <div class="meta-value">Web UI Library</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Scope</div>
+          <div class="meta-value">Web & Visual Design</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tools</div>
+          <div class="meta-value">Figma</div>
+        </div>
+      </div>
+
+      <figure class="hero-visual reveal reveal-delay-3">
+        <div class="media-placeholder" style="aspect-ratio:1256/580;">
+          <img src="images/hero-banner.png" alt="Hero Banner（暫時圖片）" loading="lazy">
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 設計挑戰 ============ -->
+  <section class="section" id="challenge">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計挑戰</span></div>
+      <h2 class="section-title reveal" data-delay="1">建立可延展的設計系統</h2>
+      <p class="section-desc reveal" data-delay="2">隨著產品與頁面持續擴充，既有設計資源逐漸難以支援後續需求。面對緊湊的專案時程，需要在有限時間內逐步整合設計資源，建立一致且易於維護的設計基礎。</p>
+
+      <div class="card-grid">
+        <div class="card reveal" data-delay="1">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 512 512" fill="none" style="width:25px;height:25px;"><path d="M0 0H93V30H30V92H0V0Z" fill="currentColor"/><path d="M419 0H512V92H482V30H419V0Z" fill="currentColor"/><path d="M0 420H30V482H93V512H0V420Z" fill="currentColor"/><path d="M482 420H512V512H419V482H482V420Z" fill="currentColor"/><path d="M23 256C75 174 158 121 256 121C354 121 437 174 489 256C437 338 354 391 256 391C158 391 75 338 23 256ZM59 256C104 319 173 361 256 361C339 361 408 319 453 256C408 193 339 151 256 151C173 151 104 193 59 256Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/><path d="M256 166C306 166 346 206 346 256C346 306 306 346 256 346C206 346 166 306 166 256C166 206 206 166 256 166ZM256 196C223 196 196 223 196 256C196 289 223 316 256 316C289 316 316 289 316 256C316 223 289 196 256 196Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+            </div>
+            <h3>視覺一致性</h3>
+          </div>
+          <p>統整色彩、字體與間距，維持視覺一致性。</p>
+        </div>
+        <div class="card reveal" data-delay="2">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><path d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m3 12 9 4.5 9-4.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m3 16.5 9 4.5 9-4.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>元件系統化</h3>
+          </div>
+          <p>系統化管理元件，提升使用與維護效率。</p>
+        </div>
+        <div class="card reveal" data-delay="3">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle><path d="m8 12.5 2.5 2.5L16 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </div>
+            
+            <h3>狀態明確化</h3>
+          </div>
+          <p>釐清元件狀態與互動，減少反覆確認與調整。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌識別規範 ============ -->
+  <section class="section" id="brand">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>品牌識別規範</span></div>
+      <h2 class="section-title reveal" data-delay="1">整合品牌識別與 Logo 規範</h2>
+      <p class="section-desc reveal" data-delay="2">統整主品牌、產品及相關公司 Logo，集中管理以方便後續取用，並定義不同背景下的使用方式，確保品牌識別在各介面情境中的一致性與辨識度。</p>
+
+      <div class="logo-showcase">
+        <div class="media-placeholder reveal" data-delay="1">
+          <img src="images/logo-primary.png" alt="LOGO · 主要品牌標誌（暫時圖片）" loading="lazy">
+        </div>
+        <div class="media-placeholder reveal" data-delay="2">
+          <img src="images/logo-extended.png" alt="LOGO · 延伸應用情境（暫時圖片）" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ UI Library 對照（直接沿用 UI Library 資料夾原始內容/架構/細節）====== -->
+  <section class="section" id="ui-library">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">定義核心視覺與介面規範</h2>
+      <p class="section-desc reveal" data-delay="2">將色彩、圓角、陰影、間距與 Icon 等基礎樣式系統化，確保不同頁面與元件皆遵循一致的視覺原則。</p>
+
+      <div class="ui-library">
+
+                <!-- 00 — Border Radius -->
+        <section class="card card--blue card--shadow" data-animate>
+          <h2 class="card__title">Colors</h2>
+
+          <div class="placeholder placeholder--radius">
+            <img src="images/ui-library-Colors.png" alt="Border Radius preview">
+          </div>
+          <div class="clear fm-space"></div>
+        </section>
+
+
+
+        <!-- 01 — Border Radius -->
+        <section class="card card--white card--radius" data-animate>
+          <h2 class="card__title">Border Radius</h2>
+          <p class="card__desc">Common used values are set up in the <strong>Variables</strong> feature in Figma.</p>
+          <hr class="card__divider">
+          <div class="placeholder placeholder--radius">
+            <img src="images/ui-library-placeholder.png" alt="Border Radius preview">
+          </div>
+        </section>
+
+        <!-- 02 — Box Shadow -->
+        <section class="card card--blue card--shadow" data-animate>
+          <h2 class="card__title">Box Shadow</h2>
+          <div class="placeholder placeholder--shadow">
+            <img src="images/ui-library-Box Shadow.png" alt="Box Shadow preview">
+          </div>
+        </section>
+
+        <!-- 03 — Button -->
+        <section class="card card--white card--button" data-animate>
+          <h2 class="card__title">Button</h2>
+          <div class="placeholder placeholder--button">
+            <img src="images/ui-library-Button.png" alt="Button preview">
+          </div>
+        </section>
+
+        <!-- 04 — Spacing -->
+        <section class="card card--blue card--spacing" data-animate>
+          <h2 class="card__title">Spacing</h2>
+          <div class="placeholder placeholder--spacing">
+            <img src="images/ui-library-Spacing.png" alt="Spacing preview">
+          </div>
+        </section>
+
+                <!-- 05 — Iconography -->
+        <section class="card card--white card--button" data-animate>
+          <h2 class="card__title">Iconography</h2>
+          <div class="placeholder placeholder--button">
+            <img src="images/ui-library-Iconography.png" alt="Button preview">
+          </div>
+                    <div class="clear fm-space"></div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Typography｜跨語系字體規範 ============ -->
+  <section class="section" id="typography">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">Typography｜跨語系字體規範</h2>
+      <p class="section-desc reveal" data-delay="2">針對不同語系的文字結構與閱讀特性，分別配置合適的字體，確保英文、繁體中文、日文與韓文皆具良好的可讀性，並維持跨語系介面的視覺一致性。</p>
+      <div class="research-item reveal" data-delay="3">
+        
+        <figure class="visual-showcase">
+          <img src="images/Typography.png" alt="高保真視覺設計 Mockup - Desktop 與 Mobile">
+        </figure>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ Illustration｜插畫風格規範 ============ -->
+<section class="section">
+      <div class="container">
+        <h2 class="section-title reveal" data-delay="1">Illustration｜插畫風格規範</h2>
+      <p class="section-desc reveal" data-delay="2">依據不同內容與使用情境，建立不同層級的人物插畫，從簡易 Icon、功能情境到完整場景，並維持一致的五官特徵與色彩風格，確保整體品牌視覺的一致性。</p>
+
+
+        
+      <div class="research-item reveal" data-delay="3">
+        
+        <figure class="visual-showcase">
+          <img src="images/Illustration.png" alt="高保真視覺設計 Mockup - Desktop 與 Mobile">
+        </figure>
+
+      </div></div>
+    </section>
+
+
+
+
+
+
+  <!-- ============ 元件與模組設計 ============ -->
+  <section class="section" id="components">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>元件與模組設計</span></div>
+      <h2 class="section-title reveal" data-delay="1">從共用元件延伸至彈性內容模組</h2>
+      <p class="section-desc reveal" data-delay="2">以視覺規範為基礎，將常用介面整理成共用元件，再依不同產品需求組合成可彈性運用的內容模組，同時考量未來深色版本的延伸，讓後續設計更容易擴充與維護。</p>
+
+<div class="cs-slider-wrap reveal" data-delay="3">
+        <div class="cs-slider" data-slider="">
+          <div class="cs-slider__img cs-slider__img--after">
+            <img src="images/dark.png" alt="After">
+          </div>
+          <div class="cs-slider__img cs-slider__img--before">
+            <img src="images/light.png" alt="Before">
+          </div>
+          <div class="cs-slider__divider">
+            <button class="cs-slider__handle" aria-label="Drag to compare">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 5L2 10L7 15" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M13 5L18 10L13 15" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <span class="cs-slider__label cs-slider__label--before">Light</span>
+          <span class="cs-slider__label cs-slider__label--after">Ｄark</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 多元應用 ============ -->
+  <section class="section" id="application">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>多元應用</span></div>
+      <h2 class="section-title reveal" data-delay="1">設計規範到實際應用</h2>
+      <p class="section-desc reveal" data-delay="2">依不同需求與內容情境彈性調整版型，延伸應用於網頁、社群圖、宣傳冊與展場印刷品，在保有各載體特色的同時，維持一致的品牌視覺。</p>
+      <div class="competitor-grid">
+        <figure class="competitor-card reveal">
+          <img src="images/DesignSystem_01.png" alt="競品網站分析 - Glory face recognition">
+          <figcaption class="cap">Website page</figcaption>
+        </figure>
+        <figure class="competitor-card reveal">
+          <img src="images/DesignSystem_02.png" alt="競品網站分析 - FacelO">
+          <figcaption class="cap">Brochure & Datasheet</figcaption>
+        </figure>
+        <figure class="competitor-card reveal">
+          <img src="images/DesignSystem_03.png" alt="競品網站分析 - AuthMe">
+          <figcaption class="cap">Exhibition Backdrop</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 設計系統成果與學習 ============ -->
+  <section class="section" id="outcome">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計系統成果</span></div>
+      <h2 class="section-title reveal" data-delay="1">從建立規範到提升團隊協作效率</h2>
+
+      <div class="outcome-grid">
+        <div class="card reveal" data-delay="1">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 512 512" fill="none"><path d="M256 18 C266 18 275 24 280 34 L324 123 C327 130 333 135 341 136 L439 150 C461 153 470 180 454 195 L383 264 C378 269 376 277 377 284 L394 381 C398 403 375 420 356 410 L268 364 C261 360 253 360 246 364 L158 410 C138 420 116 403 120 381 L137 284 C138 277 136 269 131 264 L60 195 C44 180 53 153 75 150 L173 136 C181 135 187 130 190 123 L234 34 C239 24 246 18 256 18 Z" stroke="currentColor" stroke-width="36" stroke-linejoin="round"/><path d="M106 34L120 53" stroke="currentColor" stroke-width="36" stroke-linecap="round"/><path d="M406 34L392 53" stroke="currentColor" stroke-width="36" stroke-linecap="round"/><path d="M14 319L36 312" stroke="currentColor" stroke-width="36" stroke-linecap="round"/><path d="M476 312L498 319" stroke="currentColor" stroke-width="36" stroke-linecap="round"/><path d="M256 471V494" stroke="currentColor" stroke-width="36" stroke-linecap="round"/></svg>
+            </div>
+            <h3>成果</h3>
+          </div>
+          <p>這次專案最終建立並發布了共用的 Figma Library，將散落於不同文件中的元件與設計規範集中管理，並搭配清楚易懂、附有視覺輔助的文件，讓跨團隊、跨地區的協作成員都能快速掌握並遵循一致的設計邏輯，有效降低溝通與維護成本。</p>
+        </div>
+        <div class="card reveal" data-delay="2">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.44 1 .96 1.1 1.6h4.8c.1-.64.5-1.16 1.1-1.6A6 6 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>學習</h3>
+          </div>
+          <p>這個過程也讓我更確信前期規範的重要性，越早建立一致的元件與設計原則，越能在需求持續增加時避免資源分散與重複調整。透過簡化架構、建立團隊共同語言，設計系統也變得更容易理解、使用與延伸，為後續產品擴充打下更穩定的基礎。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+      <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Other project</span></div>
+      
+      <div class="other-projects-grid">
+                        <a href="../facemewebsite/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/faceme-web.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Web Design</span>
+            <h3>FaceMe 官網設計 - 首頁與產品頁改版</h3>
+          </div>
+        </a>
+        <a href="../tforcepage/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/tforce-event.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Event Page Design</span>
+            <h3>T-FORCE - Gaming Brand Event</h3>
+          </div>
+        </a>
+
+                <a href="../petcareapp/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/petcare-app.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">App Design</span>
+            <h3>Pet Care App</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a  class="logo logo-footer">
+      <p class="footer-copy">&copy; <span id="year">2026</span> Wenlin Chen. All rights reserved.</p>
+    </a>
+    <ul class="footer-social">
+      <li><a href="mailto:cwen0122@gmail.com" aria-label="Email">Email</a></li>
+      <li><a href="https://www.behance.net/cwen0122600d" aria-label="Behance" target="_blank" rel="noopener">Behance</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到頂部">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </button>
+
+<script src="js/main.js"></script>
+<script src="js/ui-library.js"></script>
+<script src="js/cs-slider.js"></script>
+</body>
+</html>

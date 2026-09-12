@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wenlin Chen | FaceMe 官網設計 - 首頁與產品頁改版</title>
+<meta name="description" content="FaceMe 企業級 AI 人臉辨識品牌官網改版案例：UX/UI 設計、資訊架構重整與 HTML/CSS(RWD) 網頁實作。依 Figma 設計稿高還原製作。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="../index.html#top" class="logo" aria-label="回到首頁">
+      <img class="logo-mark" src="images/wlc.png" alt="WLC">
+      <span class="logo-text">Design Portfolio</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主選單">
+      <ul>
+        <li><a href="../index.html#work" class="nav-link">Work</a></li>
+        <li><a href="../index.html#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="../Resume/Wenlin%20Chen_Resume.pdf" class="btn btn-primary btn-sm" download="Wenlin Chen_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero：單欄由上而下堆疊，依 Figma 796:18588 還原 ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title reveal">FaceMe 官網設計 - 首頁與產品頁改版</h1>
+      <p class="hero-desc reveal reveal-delay-1">FaceMe 是企業級 AI 人臉辨識品牌，廣泛應用於門禁、考勤、支付驗證與身份確認等場景。在官網改版專案中，我負責首頁與多個產品頁的 UX/UI 設計與介面重構，並延伸至 HTML/CSS 網頁實作。</p>
+
+      <div class="meta-row reveal reveal-delay-2">
+        <div class="meta-item">
+          <div class="meta-label">My Role</div>
+          <div class="meta-value">UI/UX design ·  HTML/CSS (RWD)</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Team Member</div>
+          <div class="meta-value">PM · Engineering · Marcom</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Platform</div>
+          <div class="meta-value">Desktop web · Mobile web</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tools</div>
+          <div class="meta-value">Figma ·  VS Code</div>
+        </div>
+      </div>
+
+      <figure class="hero-visual reveal reveal-delay-3">
+        <img src="images/hero-banner.png" alt="FaceMe 官網首頁主視覺畫面">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 附加拼裝區塊：為什麼要改版 + 競品分析 ============
+       沿用 facemewebsite 3 打包版原始樣式（卡片式設計），
+       用 .wac-extra 包裹並將顏色變數重新命名為 --wac-*，
+       避免影響本頁原本的 fig-section 系統與 --purple 等全域變數。 -->
+  <div class="wac-extra">
+    <section class="section" id="why-redesign">
+      <div class="container">
+        <div class="fig-tag reveal is-visible"><span>為什麼要改版</span></div>
+        <h2 class="section-title reveal" data-delay="1">舊官網面臨的核心問題</h2>
+        <p class="section-desc reveal" data-delay="2">透過實際使用回饋與後台數據分析，我們歸納出最需要改善的問題，作為本次改版的出發點。</p>
+        <div class="grid grid-3">
+          <div class="card pain-card reveal">
+            <div class="card-head">
+              <div class="icon-badge">
+                <svg viewBox="0 0 327 273" fill="none" style="width:27px;height:27px;"><g stroke="currentColor" stroke-width="21" stroke-linejoin="round"><rect x="130.5" y="7.5" width="66" height="60"/><line x1="163.5" y1="75" x2="163.5" y2="198"/><line x1="33" y1="145.5" x2="294" y2="145.5"/><line x1="40.5" y1="153" x2="40.5" y2="198"/><line x1="286.5" y1="153" x2="286.5" y2="198"/><rect x="7.5" y="205.5" width="66" height="60"/><rect x="130.5" y="205.5" width="66" height="60"/><rect x="253.5" y="205.5" width="66" height="60"/></g></svg>
+              </div>
+              <h3>資訊架構不清</h3>
+            </div>
+            <p>資訊層級與操作路徑缺乏明確引導，增加使用者查找技術規格與應用情境的成本。</p>
+          </div>
+          <div class="card pain-card reveal">
+            <div class="card-head">
+              <div class="icon-badge">
+                <svg viewBox="0 0 48 48" fill="none" style="width:32px;height:32px;"><path d="M24 6 C13.5 6 5 13.6 5 23 C5 31.2 11.8 37.8 20.2 37.8 H22.7 C24.9 37.8 26.3 35.6 25.3 33.7 C24.4 31.9 25.7 29.8 27.7 29.8 H33 C38.5 29.8 43 25.4 43 20 C43 12.3 34.5 6 24 6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="15" cy="20" r="2.2" fill="currentColor"/><circle cx="21" cy="14" r="2.2" fill="currentColor"/><circle cx="29" cy="14.5" r="2.2" fill="currentColor"/><circle cx="35" cy="20" r="2.2" fill="currentColor"/></svg>
+              </div>
+              <h3>視覺不夠貼近品牌</h3>
+            </div>
+            <p>版面樣式老舊，且缺乏一致的視覺規範，難以有效傳達品牌的技術實力與專業形象。</p>
+          </div>
+          <div class="card pain-card reveal">
+            <div class="card-head">
+              <div class="icon-badge">
+                <svg viewBox="0 0 626 626" fill="none" style="width:32px;height:32px;"><path d="M325 66 L248 66 L243 68 L241 72 L231 124 L226 128 L210 133 L193 142 L189 142 L147 110 L142 108 L138 109 L78 169 L78 174 L110 220 L110 223 L97 254 L93 258 L41 266 L33 269 L32 271 L33 355 L41 359 L94 367 L97 371 L110 402 L109 407 L78 450 L77 456 L80 461 L137 516 L140 517 L146 515 L189 483 L192 483 L227 499 L232 506 L242 556 L245 558 L326 558 L331 554 L341 505 L346 500 L363 495 L380 486 L384 486 L426 518 L431 519 L435 517 L495 458 L495 453 L464 408 L464 404 L477 373 L481 369 L533 361 L541 358 L542 355 L541 271 L533 267 L479 259 L475 255 L464 225 L464 220 L495 176 L495 167 L439 111 L434 108 L431 108 L424 112 L384 142 L380 142 L368 135 L346 127 L341 120 L331 70 Z M259 83 L316 84 L319 90 L329 137 L334 141 L349 145 L363 151 L380 161 L387 161 L428 130 L433 129 L475 171 L474 177 L445 217 L446 225 L455 243 L463 267 L467 272 L472 274 L521 281 L525 284 L525 342 L521 346 L472 353 L467 357 L463 374 L455 393 L446 409 L445 416 L474 456 L475 461 L433 502 L428 501 L387 470 L380 470 L363 480 L348 486 L334 490 L329 494 L319 542 L258 542 L254 538 L245 492 L240 486 L219 479 L193 464 L187 464 L150 491 L141 496 L98 455 L99 449 L128 408 L127 398 L117 379 L109 356 L105 352 L99 350 L52 344 L48 341 L48 284 L52 281 L106 273 L110 269 L115 251 L128 224 L129 218 L125 210 L99 175 L99 171 L140 130 L143 129 L186 161 L194 161 L219 147 L240 141 L245 137 L255 87 Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" stroke="currentColor" stroke-width="18" stroke-linejoin="round"/><path d="M274 213 L253 218 L236 226 L222 236 L207 252 L194 275 L189 291 L187 304 L188 330 L194 351 L201 365 L214 382 L229 395 L247 405 L266 411 L279 413 L303 412 L325 406 L342 397 L355 387 L369 371 L380 351 L385 335 L387 323 L386 296 L382 280 L370 256 L363 247 L344 230 L326 220 L306 214 Z M273 230 L292 229 L305 231 L320 236 L337 246 L349 257 L360 272 L367 287 L370 299 L371 317 L369 331 L364 346 L354 363 L344 374 L331 384 L322 389 L304 395 L270 395 L252 389 L237 380 L225 369 L214 354 L208 341 L204 326 L203 310 L205 295 L209 282 L219 264 L233 249 L244 241 L261 233 Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" stroke="currentColor" stroke-width="18" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>系統效率不足</h3>
+            </div>
+            <p>既有系統逐漸難以因應使用需求，反應速度較慢，影響日常操作效率。</p>
+          </div>
+        </div>
+
+        <div class="strategy-banner reveal">
+          <h3>定義新策略：從資訊架構、使用體驗到營運效率，重新建立網站設計方向</h3>
+          <ul class="strategy-list">
+            <li><span class="num"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="m5 12 5 5L20 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>提升網站易用性，讓資訊更容易理解與瀏覽</li>
+            <li><span class="num"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="m5 12 5 5L20 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>強化品牌體驗，建立一致且現代化的網站形象</li>
+            <li><span class="num"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="m5 12 5 5L20 7" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>提升營運效率，降低內容更新與維護成本</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="split split-reverse">
+          <div class="split-media reveal">
+            <img src="images/competitor-analysis.png" alt="競品分析截圖" loading="lazy">
+          </div>
+          <div class="split-text reveal" data-delay="1">
+            <div class="fig-tag reveal is-visible"><span>競品分析</span></div>
+            <!-- <p class="section-tag">競品分析</p> -->
+            <h2 class="section-title">釐清市場定位與差異</h2>
+            <p class="section-desc">彙整多家同類型官網，分析其資訊架構、視覺風格與轉換設計，並歸納可借鏡的呈現方式與差異化方向，作為後續改版的參考依據。
+            </p>
+            <!-- <ul class="check-list">
+              <li>資訊架構深度與分類邏輯比較</li>
+              <li>視覺風格與品牌調性定位圖</li>
+              <li>轉換入口與 CTA 配置模式歸納</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" >
+      <div class="container">
+        <div class="fig-tag reveal is-visible"><span>架構規劃</span></div>
+        <!-- <p class="section-tag reveal is-visible">架構規劃</p> -->
+        <h2 class="section-title reveal" data-delay="1">資訊架構與 Wireframe</h2>
+        <p class="section-desc reveal" data-delay="2">建立清晰的網站架構與頁面流程，透過 Wireframe 驗證資訊層級、內容配置與使用動線，為後續介面設計奠定基礎。</p>
+        
+
+        
+      <div class="research-item reveal" data-delay="3">
+        
+        <figure class="visual-Wireframe">
+          <img src="images/Wireframe.png" alt="高保真視覺設計 Mockup - Desktop 與 Mobile">
+        </figure>
+        <!-- <div class="wireframe-strip">
+          <img src="images/wireframe-1.png" alt="Wireframe 1" class="reveal reveal-delay-1 is-visible">
+          <img src="images/wireframe-2.png" alt="Wireframe 2" class="reveal reveal-delay-1 is-visible">
+          <img src="images/wireframe-3.png" alt="Wireframe 3" class="reveal reveal-delay-2 is-visible">
+          <img src="images/wireframe-4.png" alt="Wireframe 4" class="reveal reveal-delay-2 is-visible">
+          <img src="images/wireframe-5.png" alt="Wireframe 5" class="reveal reveal-delay-3 is-visible">
+          <img src="images/wireframe-6.png" alt="Wireframe 6" class="reveal reveal-delay-3 is-visible">
+        </div> -->
+      </div></div>
+    </section>
+
+<!-- ============ 視覺設計 ============ -->  
+    <section class="section section-alt" >
+      <div class="container">
+        <div class="fig-tag reveal is-visible"><span>視覺設計</span></div>
+        <!-- <p class="section-tag reveal is-visible">視覺設計</p> -->
+        <h2 class="section-title reveal" data-delay="1">塑造清晰的網站視覺風格</h2>
+        <p class="section-desc reveal" data-delay="2">將 Wireframe 延伸至高保真介面，統整介面元件、圖像與互動樣式，建立一致的視覺方向。</p>
+        <figure class="visual-showcase reveal" data-delay="3">
+          <img src="images/visual-upgrade-mockup.png" alt="高保真視覺設計 Mockup - Desktop 與 Mobile">
+        </figure>
+    </div>
+    </section>
+
+<!-- ============ 首頁設計 ============ -->    
+<section class="section">
+      <div class="container">
+          <div class="fig-tag reveal is-visible"><span>首頁設計</span></div>
+        <!-- <p class="section-tag reveal is-visible">首頁設計</p> -->
+        <h2 class="section-title reveal" data-delay="1">改版重點</h2>
+        <p class="section-desc reveal" data-delay="2">從首頁著手建立新版網站的設計方向，重新規劃內容呈現與頁面結構，並將設計邏輯延伸至後續產品頁。</p>
+        <div class="homepage-grid">
+        <div class="reveal" data-delay="3">
+          <h3 style="font-size:20px; font-weight:600; margin-top:32px;">區塊重整 ：</h3>
+          <div class="revamp-points">
+            <div class="revamp-point">
+              <span class="idx dot-1">1</span>
+       
+              <div><h4>國際認證及獎項</h4><p>重新分類，提升資訊辨識度</p></div>
+            </div>
+            <div class="revamp-point">
+              <span class="idx dot-2">2</span>
+     
+              <div><h4>主要功能</h4><p>整合功能資訊，聚焦核心能力</p></div>
+            </div>
+            <div class="revamp-point">
+              <span class="idx dot-3">3</span>
+              
+              <div><h4>應用實例方案</h4><p>擴充應用情境，提升產品探索效率</p></div>
+            </div>
+            <div class="revamp-point">
+              <span class="idx dot-4">4</span>
+              
+              <div><h4>內容精簡</h4><p>移除非必要區塊，減少資訊冗餘</p></div>
+            </div>
+            <div class="revamp-point">
+                <span class="idx dot-5">5</span>
+             
+              <div><h4>產品系列</h4><p>濃縮版面配置，提高資訊密度</p></div>
+            </div>
+            <div class="revamp-point">
+              <span class="idx dot-6">6</span>
+             
+              <div><h4>實績案例</h4><p>強化 CTA 引導，增加延伸瀏覽機會</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-media reveal" data-delay="4">
+            <img src="images/homepage_ba.png" alt="競品分析截圖" loading="lazy">
+          </div>
+      </div>
+    </div>
+
+
+    </section>
+
+
+<!-- ============ 首頁設計-改版 ============ -->    
+ <section class="section section-alt" >
+      <div class="container">
+<h2 class="section-title reveal" style="margin-bottom:40px;">以三個重點區域為例，呈現改版前後的設計對比</h2>
+          <div class="subfeature-grid">
+        <div class="subfeature reveal reveal-delay-1">
+
+          <div class="compare" data-compare="" id="white-redesign">
+            <div class="compare-tabs">
+              <button class="compare-tab" data-state="before">Before</button>
+              <button class="compare-tab is-active" data-state="after">After</button>
+            </div>
+            <div class="compare-stage">
+              <div class="compare-panel" data-panel="before">
+<img src="images/application-scenario-1-1.png" alt="競品分析截圖" loading="lazy">
+              </div>
+              <div class="compare-panel is-active" data-panel="after">
+<img src="images/application-scenario-1-2.png" alt="競品分析截圖" loading="lazy">
+              </div>
+                               <h3>整合產品核心能力</h3>
+          <p>將原本缺乏視覺焦點的版面重新整合，透過卡片式橫向排列，搭配條列重點與底色區隔，強化視覺引導，使資訊更聚焦、閱讀動線更清晰。</p>
+            </div>
+          </div>
+   
+        </div>
+
+        <div class="subfeature reveal reveal-delay-2">
+
+          <div class="compare" data-compare="" id="white-redesign">
+            <div class="compare-tabs">
+              <button class="compare-tab" data-state="before">Before</button>
+              <button class="compare-tab is-active" data-state="after">After</button>
+            </div>
+            <div class="compare-stage">
+              <div class="compare-panel" data-panel="before">
+<img src="images/application-scenario-2-1.png" alt="競品分析截圖" loading="lazy">
+              </div>
+              <div class="compare-panel is-active" data-panel="after">
+<img src="images/application-scenario-2-2.png" alt="競品分析截圖" loading="lazy">
+              </div>
+                                  <h3>擴充產品應用情境</h3>
+          <p>針對資訊不足與頁面導向不直覺的問題，重新整理內容與操作方式，補充應用情境與簡述，並加入明確的導向按鈕，讓使用者快速掌握重點並找到合適的產品。</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="subfeature reveal reveal-delay-3">
+
+          <div class="compare" data-compare="" id="white-redesign">
+            <div class="compare-tabs">
+              <button class="compare-tab" data-state="before">Before</button>
+              <button class="compare-tab is-active" data-state="after">After</button>
+            </div>
+            <div class="compare-stage">
+              <div class="compare-panel" data-panel="before">
+<img src="images/application-scenario-3-1.png" alt="競品分析截圖" loading="lazy">
+              </div>
+              <div class="compare-panel is-active" data-panel="after">
+<img src="images/application-scenario-3-2.png" alt="競品分析截圖" loading="lazy">
+              </div>
+                             <h3>強化延伸瀏覽引導</h3>
+          <p>重新梳理視覺層級與內容呈現方式，使版面風格更一致、重要資訊更容易辨識，並透過明確的按鈕引導使用者延伸瀏覽，強化內容黏著度。</p>
+            </div>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+<!-- ============ 產品頁改版策略 ============ -->    
+<section class="section" id="why-redesign">
+      <div class="container">
+<div class="homepage-grid">
+        <div class="reveal" data-delay="1">
+         
+<div data-delay="1" class="split-text reveal">
+  <div class="fig-tag reveal is-visible"><span>產品頁設計</span></div>
+          <!-- <p class="section-tag">競品分析</p> -->
+          <h2 class="section-title">多產品頁面改版的設計原則</h2>
+          
+          <div class="revamp-points">
+            <div class="revamp-point">
+<span class="idx dot-7">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+  <path d="m5 12 5 5L20 7" stroke="#3b6cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+              <div><h4>清楚傳達產品價值</h4><p>突顯核心功能與產品特色。</p></div>
+            </div>
+            <div class="revamp-point">
+<span class="idx dot-7">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+  <path d="m5 12 5 5L20 7" stroke="#3b6cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+              <div><h4>提升資訊易讀性</h4><p>降低閱讀負擔，讓重點更容易掌握。</p></div>
+            </div>
+            <div class="revamp-point">
+<span class="idx dot-7">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+  <path d="m5 12 5 5L20 7" stroke="#3b6cf6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+              <div><h4>保留版面彈性</h4><p>依不同產品需求，彈性調整內容配置。</p></div>
+            </div>
+
+          </div>
+        </div>
+ 
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="compare" data-compare="">
+            <div class="compare-tabs">
+              <button class="compare-tab" data-state="before">Before</button>
+              <button class="compare-tab is-active" data-state="after">After</button>
+            </div>
+            <div class="compare-stage">
+              <div class="compare-panel" data-panel="before">
+<img src="images/mock-p-1-1.png" alt="競品分析截圖" loading="lazy">
+              </div>
+              <div class="compare-panel is-active" data-panel="after">
+<img src="images/mock-p-1-2.png" alt="競品分析截圖" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    </section>    
+  <section class="section" >
+      <div class="container">
+
+      <div >
+        <div class="fig-tag reveal is-visible"><span>內容模組</span></div>
+                 <h2 class="section-title reveal" style="margin-bottom:40px;">以三大內容架構，重新編排資訊層級</h2>
+        <!-- <h3 class="reveal" style="font-size:20px; font-weight:600;">以三大內容架構，重新編排資訊層級</h3> -->
+<div class="module-grid">
+          <div class="module-card reveal reveal-delay-1">
+ <h3>核心功能</h3>
+          <p>以 Icon 強化視覺引導，快速理解產品優勢。</p>
+    <img src="images/mock-page-1.png" alt="競品分析截圖" loading="lazy">
+            
+          </div>
+          <div class="module-card reveal reveal-delay-2">
+ <h3>卡片式呈現</h3>
+          <p>明確劃分內容層級，讓重點資訊更容易掌握。</p>
+    <img src="images/mock-page-2.png" alt="競品分析截圖" loading="lazy">
+            
+          </div>
+          <div class="module-card reveal reveal-delay-3">
+ <h3>交錯式圖文編排</h3>
+          <p>以底色區分段落，清楚呈現不同產品應用。</p>
+    <img src="images/mock-page-3.png" alt="競品分析截圖" loading="lazy">
+            
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    </section>   
+    
+    <section class="section section-alt" >
+      <div class="container">
+        <!-- <div class="fig-tag reveal is-visible"><span>視覺設計</span></div> -->
+                   <h2 class="section-title reveal" data-delay="1">以共通設計邏輯延伸至各產品頁</h2>
+
+        <p class="section-desc reveal" data-delay="2" style="margin-bottom:30px;">將前面整理好的設計架構與模組套用到不同產品頁，以共同的設計邏輯維持頁面間的連貫性，同時依產品內容彈性調整。</p>
+        <figure class="visual-showcase reveal" data-delay="3">
+          <img src="images/all-page.png" alt="高保真視覺設計 Mockup - Desktop 與 Mobile">
+        </figure>
+    </div>
+    </section>    
+
+
+
+<!-- ============ 設計開發 ============ -->  
+<section class="section" id="why-redesign">
+      <div class="container">
+
+      <div>
+        <div class="fig-tag reveal is-visible"><span>設計開發</span></div>
+                 <h2 class="section-title reveal" data-delay="1">跨部門協作</h2>
+                 <p class="section-desc reveal" data-delay="2" style="margin-bottom:60px;">與產品及行銷團隊釐清內容需求與呈現方向，並與工程團隊確認實作方式，透過跨部門協作持續調整設計，兼顧使用體驗、商業需求與開發可行性</p>
+                  <h2 class="section-title reveal" data-delay="1">從設計到網頁實作</h2><p class="section-desc reveal" data-delay="2">結合設計思維與 HTML／CSS 實作能力，將 Figma 設計轉化為 RWD 網頁，並運用 AI 輔助提升工作效率，同時兼顧程式結構與後續維護，串聯設計與開發流程。</p>
+                  
+<div class="homepage-grid" style="margin-top:32px;">
+        <div class="reveal" data-delay="3">
+          <h3 style="font-size:20px; font-weight:600;">專案執行方式 ：</h3>
+          <div class="revamp-points">
+            <div class="revamp-point">
+              <span class="idx dot-8">1</span>
+       
+              <div><h4>Figma 設計稿</h4><p>UI 設計與規格整理</p></div>
+            </div>
+            <div class="revamp-point">
+              <span class="idx dot-8">2</span>
+     
+              <div><h4>Claude AI 協助</h4><p>解析結構、產出程式碼初稿</p></div>
+            </div>
+            <div class="revamp-point">
+              <span class="idx dot-8">3</span>
+              
+              <div><h4>調整 HTML / CSS（RWD）</h4><p>人工調整切版細節，確保品質與一致性。</p></div>
+            </div>
+            
+            <div class="revamp-point">
+                <span class="idx dot-8">4</span>
+             
+              <div><h4>網頁交付</h4><p>完成可編輯的網頁，快速驗證與上線。</p></div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <img src="images/visual-ol.png" alt="高保真視覺設計 Mockup - Desktop 與 Mobile">
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+
+
+    </section>
+
+<!-- ============ 改版成果及後期回饋 ============ -->  
+<section class="section" id="why-redesign">
+      <div class="container">
+
+      <div>
+        <div class="fig-tag reveal is-visible"><span>可量化的成果</span></div>
+                 <h2 class="section-title reveal" data-delay="1">改版上線後的關鍵成效</h2>
+                 <p class="section-desc reveal" data-delay="2" style="margin-bottom:60px;">改版後的網站效能與使用者參與度皆有明顯改善，透過介面重構與前端調整，網站載入效率與整體使用體驗獲得提升，並從 Lighthouse 與 GA4 數據中得到具體驗證。</p>
+
+                  
+<div class="stats-row stats-row--icon">
+        <div class="stat-pill stat-pill--icon reveal" data-delay="1">
+          <span class="stat-pill-icon stat-pill-icon--green">
+           <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number stat-number--green" data-target="32" data-suffix="%" data-prefix="+">+32%</span>
+            <span class="stat-pill-label">Lighthouse 效能提升</span>
+          </span>
+        </div>
+        <div class="stat-pill stat-pill--icon reveal" data-delay="2">
+          <span class="stat-pill-icon stat-pill-icon--blue">
+            <svg viewBox="0 0 95 95" fill="none" style="width:40px;height:40px;"><path d="M16.8174 64.4926C16.0625 65.2989 16.1043 66.5646 16.9107 67.3195C17.7171 68.0744 18.9827 68.0327 19.7376 67.2263L18.2775 65.8595L16.8174 64.4926ZM76.5139 31.0981C77.2548 30.2789 77.1914 29.0142 76.3722 28.2732C75.553 27.5322 74.2883 27.5956 73.5473 28.4148L75.0306 29.7564L76.5139 31.0981ZM45.5646 60.7308L44.1162 62.1099L45.5646 60.7308ZM47.0305 60.7121L45.5472 59.3704L47.0305 60.7121ZM34.9569 49.59L33.5085 50.9691L34.9569 49.59ZM18.2775 65.8595L19.7376 67.2263L34.9627 50.963L33.5026 49.5961L32.0426 48.2292L16.8174 64.4926L18.2775 65.8595ZM34.9569 49.59L33.5085 50.9691L44.1162 62.1099L45.5646 60.7308L47.0131 59.3517L36.4053 48.2109L34.9569 49.59ZM47.0305 60.7121L48.5138 62.0538L76.5139 31.0981L75.0306 29.7564L73.5473 28.4148L45.5472 59.3704L47.0305 60.7121ZM45.5646 60.7308L44.1162 62.1099C45.3195 63.3737 47.3432 63.3478 48.5138 62.0538L47.0305 60.7121L45.5472 59.3704C45.9374 58.9391 46.612 58.9304 47.0131 59.3517L45.5646 60.7308ZM33.5026 49.5961L34.9627 50.963C34.5698 51.3826 33.9049 51.3854 33.5085 50.9691L34.9569 49.59L36.4053 48.2109C35.216 46.9619 33.2212 46.9702 32.0426 48.2292L33.5026 49.5961Z" fill="currentColor"></path><path d="M61.4403 26.8731C60.3361 26.8994 59.4623 27.8159 59.4886 28.9202C59.515 30.0244 60.4315 30.8983 61.5358 30.8719L61.4881 28.8725L61.4403 26.8731ZM73.8168 43.153C73.7904 44.2572 74.6643 45.1738 75.7685 45.2001C76.8728 45.2265 77.7893 44.3527 77.8156 43.2484L75.8162 43.2007L73.8168 43.153ZM61.4881 28.8725L61.5358 30.8719L75.1651 30.5472L75.1174 28.5477L75.0697 26.5483L61.4403 26.8731L61.4881 28.8725ZM76.141 29.5713L74.1415 29.5236L73.8168 43.153L75.8162 43.2007L77.8156 43.2484L78.1404 29.6191L76.141 29.5713ZM75.1174 28.5477L75.1651 30.5472C74.5943 30.5608 74.1279 30.0944 74.1415 29.5236L76.141 29.5713L78.1404 29.6191C78.1812 27.9065 76.7822 26.5075 75.0697 26.5483L75.1174 28.5477Z" fill="currentColor"></path></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number stat-number--blue" data-target="26.8" data-suffix="%" data-decimal="1" data-prefix="+">+26.8%</span>
+            <span class="stat-pill-label">GA4 首頁流量提升</span>
+          </span>
+        </div>
+        <div class="stat-pill stat-pill--icon reveal" data-delay="3">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 46 62" fill="none" style="width:31px;height:31px;"><path d="M22.7129 59.7747C18.8041 57.7835 7.88751 48.7134 5.01295 42.0751C2.1364 36.7674 8.11102 34.1125 11.6504 38.314L13.8742 40.7487C14.5574 41.4966 15.7919 40.8714 15.5931 39.8781L11.6504 20.171C11.6504 20.171 10.5458 13.7384 14.0858 13.0945C18.9533 12.209 19.617 18.4006 19.617 18.4006C19.617 18.4006 20.6663 24.3802 21.0551 27.3611M22.0507 33.6666C22.0507 33.6666 21.4439 30.342 21.0551 27.3611M28.9075 33.8912C28.9075 33.8912 28.6991 30.4411 28.6862 30.3513C28.6347 29.9902 28.5618 28.109 28.4705 27.8036C27.4348 22.1238 21.0551 24.115 21.0551 27.3611M35.9875 34.3337L35.6838 27.999L35.6659 27.6247C34.8812 22.6077 28.4705 24.1565 28.4705 27.8036M35.6838 27.999C37.5362 26.3689 41.5187 25.7052 43.0674 29.9088C43.8536 33.4464 44.2905 45.7129 41.8971 52.131" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"></path><path d="M24.9814 11.2103L26.9119 10.6874V10.6874L24.9814 11.2103ZM21.9332 5.97958L23.3398 4.55776L23.3398 4.55776L21.9332 5.97958ZM16.6699 2.98792L17.1719 1.05196V1.05196L16.6699 2.98792ZM10.616 3.04499L10.0776 1.11883L10.0776 1.11883L10.616 3.04499ZM5.40997 6.13532L3.97686 4.74028L3.97686 4.74028L5.40997 6.13532ZM2.46087 11.4225L4.40084 11.9089L2.46087 11.4225ZM2.56684 17.4757L4.48859 16.9217L4.48859 16.9217L2.56684 17.4757ZM3.51577 23.2667C4.24592 24.0956 5.50972 24.1756 6.33856 23.4454C7.16739 22.7153 7.2474 21.4515 6.51726 20.6226L5.01651 21.9447L3.51577 23.2667ZM23.306 15.4925C23.1639 16.5879 23.9366 17.5911 25.032 17.7332C26.1274 17.8753 27.1306 17.1026 27.2728 16.0072L25.2894 15.7498L23.306 15.4925ZM24.9814 11.2103L26.9119 10.6874C26.2828 8.36483 25.0504 6.25004 23.3398 4.55776L21.9332 5.97958L20.5266 7.4014C21.7355 8.59732 22.6064 10.0918 23.051 11.7331L24.9814 11.2103ZM21.9332 5.97958L23.3398 4.55776C21.6291 2.86547 19.5011 1.65594 17.1719 1.05196L16.6699 2.98792L16.1678 4.92389C17.8139 5.35072 19.3177 6.20549 20.5266 7.4014L21.9332 5.97958ZM16.6699 2.98792L17.1719 1.05196C14.8426 0.447973 12.395 0.471042 10.0776 1.11883L10.616 3.04499L11.1544 4.97115C12.7921 4.51337 14.5218 4.49706 16.1678 4.92389L16.6699 2.98792ZM10.616 3.04499L10.0776 1.11883C7.76011 1.76661 5.65531 3.01604 3.97686 4.74028L5.40997 6.13532L6.84308 7.53037C8.02921 6.31188 9.51664 5.42893 11.1544 4.97115L10.616 3.04499ZM5.40997 6.13532L3.97686 4.74028C2.2984 6.46451 1.10607 8.60216 0.520905 10.9362L2.46087 11.4225L4.40084 11.9089C4.81436 10.2595 5.65695 8.74885 6.84308 7.53037L5.40997 6.13532ZM2.46087 11.4225L0.520905 10.9362C-0.0642596 13.2702 -0.0214161 15.7175 0.645085 18.0296L2.56684 17.4757L4.48859 16.9217C4.01759 15.2877 3.98731 13.5583 4.40084 11.9089L2.46087 11.4225ZM2.56684 17.4757L0.645084 18.0296C1.20458 19.9706 2.18683 21.7582 3.51577 23.2667L5.01651 21.9447L6.51726 20.6226C5.57811 19.5566 4.88397 18.2933 4.48859 16.9217L2.56684 17.4757ZM25.2894 15.7498L27.2728 16.0072C27.5029 14.2333 27.3826 12.4253 26.9119 10.6874L24.9814 11.2103L23.051 11.7331C23.3836 12.9613 23.4687 14.2389 23.306 15.4925L25.2894 15.7498Z" fill="currentColor" stroke="currentColor" stroke-width="0.01" stroke-linejoin="round"></path></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="21" data-suffix="%" data-prefix="+">+21%</span>
+            <span class="stat-pill-label">GA4 使用者互動率增加</span>
+          </span>
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+
+
+    </section>
+
+    
+  <!-- ================= Other project case studies ================= -->
+    <section class="section section-alt">
+      <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Other project</span></div>
+      
+      <div class="other-projects-grid">
+        <a href="../DesignSystem/index.html" class="project-card reveal is-visible" data-delay="1">
+          <div class="project-thumb"><img src="images/faceme-design-system.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Visual Identity </span>
+            <h3>FaceMe – Design System</h3>
+          </div>
+        </a>
+        <a href="../tforcepage/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/tforce-event.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Event Page Design</span>
+            <h3>T-FORCE - Gaming Brand Event</h3>
+          </div>
+        </a>
+
+                <a href="../petcareapp/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/petcare-app.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">App Design</span>
+            <h3>Pet Care App</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ============ /facemewebsite 3 主內容區塊 ============ -->
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a  class="logo logo-footer">
+      <p class="footer-copy">&copy; <span id="year">2026</span> Wenlin Chen. All rights reserved.</p>
+    </a>
+    <ul class="footer-social">
+      <li><a href="mailto:cwen0122@gmail.com" aria-label="Email">Email</a></li>
+      <li><a href="https://www.behance.net/cwen0122600d" aria-label="Behance" target="_blank" rel="noopener">Behance</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到頂部">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

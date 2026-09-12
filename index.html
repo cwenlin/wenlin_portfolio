@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wenlin Chen | Design Portfolio</title>
+  <meta name="description" content="Wenlin Chen 的設計作品集 — UI/UX、網頁設計、App 設計與平面設計作品。" />
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta property="og:title" content="Wenlin Chen | Design Portfolio" />
+  <meta property="og:description" content="UI/UX、網頁設計、App 設計與平面設計作品集" />
+  <meta property="og:image" content="images/placeholder-blue.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <!-- ============ Scroll progress bar ============ -->
+  <!-- <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div> -->
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="回到首頁">
+        <img class="logo-mark" src="images/wlc.png" alt="WLC">
+        <span class="logo-text">Design Portfolio</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主選單">
+        <ul>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="Resume/Wenlin%20Chen_Resume.pdf" class="btn btn-primary btn-sm" download="Wenlin Chen_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Resume</a>
+        <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="hero-decor" aria-hidden="true">
+        <span class="blob blob-a"></span>
+        <span class="blob blob-b"></span>
+        <span class="blob blob-c"></span>
+        <span class="grid-overlay"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>👋 I'm <span class="accent">Wenlin Chen</span></p>
+        <h1 class="hero-title reveal" data-reveal data-reveal-delay="1">
+          Welcome to my<br />
+          <span class="hero-title-gradient">Design Portfolio</span>
+        </h1>
+        <p class="hero-sub reveal" data-reveal data-reveal-delay="2">
+          我是一名具備多元專案經驗的設計師，專注於 UI/UX、網頁與品牌視覺設計，擅長整合視覺與使用體驗，打造兼具易用性與設計質感的數位介面。同時具備 HTML/CSS 前端基礎與 RWD 規劃能力，能進一步將設計延伸至網頁實作。
+        </p>
+        <div class="hero-cta reveal" data-reveal data-reveal-delay="3">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#about" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <!-- <dl class="hero-stats reveal" data-reveal data-reveal-delay="4">
+          <div class="stat">
+            <dt>Years of experience</dt>
+            <dd><span class="count-up" data-count-to="5">0</span>+</dd>
+          </div>
+          <div class="stat">
+            <dt>Projects delivered</dt>
+            <dd><span class="count-up" data-count-to="40">0</span>+</dd>
+          </div>
+          <div class="stat">
+            <dt>Happy clients</dt>
+            <dd><span class="count-up" data-count-to="18">0</span>+</dd>
+          </div>
+        </dl> -->
+      </div>
+
+      <a href="#work" class="scroll-cue" aria-label="向下捲動">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ Selected Work ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">Featured Projects</p>
+          <h2 class="section-title">Case Studies</h2>
+          <p class="section-desc">精選代表性專案，呈現從介面設計、設計系統到品牌活動頁的多元實務經驗。</p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="work-card reveal" data-reveal>
+            <a class="work-card-link" href="facemewebsite/index.html" aria-label="查看 FaceMe 官網設計案例">
+              <div class="work-card-media">
+                <img src="images/projects/faceme-web.png" alt="FaceMe 官網設計首頁與產品頁預覽" loading="lazy" width="1200" height="900" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-text">
+                  <p class="work-card-tag">Web Design</p>
+                  <h3 class="work-card-title">FaceMe 官網設計 - 首頁與產品頁改版</h3>
+                </div>
+                <span class="work-card-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card reveal" data-reveal data-reveal-delay="1">
+            <a class="work-card-link" href="DesignSystem/index.html" aria-label="查看 FaceMe 設計系統案例">
+              <div class="work-card-media">
+                <img src="images/projects/faceme-design-system.png" alt="FaceMe 設計系統元件與色彩規範預覽" loading="lazy" width="1200" height="900" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-text">
+                  <p class="work-card-tag">Visual Identity</p>
+                  <h3 class="work-card-title">FaceMe – Design System</h3>
+                </div>
+                <span class="work-card-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card reveal" data-reveal data-reveal-delay="2">
+            <a class="work-card-link" href="tforcepage/index.html" aria-label="查看 T-FORCE 電競品牌活動案例">
+              <div class="work-card-media">
+                <img src="images/projects/tforce-event.png" alt="T-FORCE 電競品牌活動主視覺預覽" loading="lazy" width="1200" height="900" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-text">
+                  <p class="work-card-tag">Event Page Design</p>
+                  <h3 class="work-card-title">T-FORCE - Gaming Brand Event</h3>
+                </div>
+                <span class="work-card-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card reveal" data-reveal data-reveal-delay="3">
+            <a class="work-card-link" href="petcareapp/index.html" aria-label="查看 Pet Care App 案例">
+              <div class="work-card-media">
+                <img src="images/projects/petcare-app.png" alt="Pet Care App 介面設計預覽" loading="lazy" width="1200" height="900" />
+              </div>
+              <div class="work-card-body">
+                <div class="work-card-text">
+                  <p class="work-card-tag">App Design</p>
+                  <h3 class="work-card-title">Pet Care App</h3>
+                </div>
+                <span class="work-card-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Graphic & Social Media Design ============ -->
+    <section class="section section-alt" id="graphic">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">More Projects</p>
+          <h2 class="section-title">Digital Media Design</h2>
+          <p class="section-desc">涵蓋品牌社群、活動 Banner 與節慶主視覺設計，透過一致的視覺語言強化品牌形象與內容吸引力。</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="project-card reveal" data-reveal href="page_01/index.html" aria-label="查看 AI Image Generation Prompts 案例">
+            <div class="project-thumb">
+              <img src="images/dm01.png" alt="AI 影像生成提示詞社群貼文設計" loading="lazy" width="900" height="900" />
+            </div>
+            <div class="project-info">
+              <span class="project-tag">CyberLink</span>
+              <h3>SEO Content Visual Design</h3>
+            </div>
+          </a>
+          <a class="project-card reveal" data-reveal data-reveal-delay="1" href="page_02/index.html" aria-label="查看 Streaming Content Key Visual 案例">
+            <div class="project-thumb">
+              <img src="images/dm02.png" alt="影音串流內容主視覺設計" loading="lazy" width="900" height="900" />
+            </div>
+            <div class="project-info">
+              <span class="project-tag">TEAMGROUP</span>
+              <h3>Graphic & Social Media Design</h3>
+            </div>
+          </a>
+          <a class="project-card reveal" data-reveal data-reveal-delay="2" href="page_03/index.html" aria-label="查看 Black Friday Cyber Monday Campaign 案例">
+            <div class="project-thumb">
+              <img src="images/dm03.png" alt="黑色星期五網路星期一促銷活動視覺" loading="lazy" width="900" height="900" />
+            </div>
+            <div class="project-info">
+              <span class="project-tag">TEAMGROUP</span>
+              <h3>Event Visual & Motion Design</h3>
+            </div>
+          </a>
+
+
+
+
+          <a class="project-card reveal" data-reveal data-reveal-delay="3" href="page_04/index.html" aria-label="查看 Back to School Sale Banner 案例">
+            <div class="project-thumb">
+              <img src="images/dm04.png" alt="開學季促銷活動 banner 設計" loading="lazy" width="900" height="900" />
+            </div>
+            <div class="project-info">
+              <span class="project-tag">太平洋房屋</span>
+              <h3>Mother’s Day Interactive E-Card</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Services / Expertise ============ -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">What I do</p>
+          <h2 class="section-title">Services</h2>
+          <p class="section-desc">從介面規劃到視覺產出，提供完整的設計服務。</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal" data-reveal>
+            <div class="service-card-head">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7 9l3 3-3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>UI / UX</h3>
+            </div>
+            <p>以使用者需求為基礎，規劃資訊架構與互動流程，打造直覺、易用的產品體驗。</p>
+          </div>
+
+          <div class="service-card reveal" data-reveal data-reveal-delay="1">
+            <div class="service-card-head">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3Z" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+              <h3>Web Design</h3>
+            </div>
+            <p>規劃網站介面與 RWD 響應式設計，兼顧品牌視覺與使用體驗，並以 HTML / CSS 完成前端實作。</p>
+          </div>
+
+          <!-- <div class="service-card reveal" data-reveal data-reveal-delay="2">
+            <div class="service-card-head">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="2.5" width="12" height="19" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3>App Design</h3>
+            </div>
+            <p>從線框稿到高保真原型，設計符合平台規範且好操作的行動應用介面。</p>
+          </div> -->
+
+          <div class="service-card reveal" data-reveal data-reveal-delay="3">
+            <div class="service-card-head">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><circle cx="17.25" cy="17.25" r="3.75" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+              <h3>Graphic Design</h3>
+            </div>
+            <p>涵蓋品牌識別、社群圖文與活動主視覺設計，打造一致且具辨識度的品牌形象。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Core Design Skills ============ -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">Toolbox</p>
+          <h2 class="section-title">Core Design & Front-end Skills</h2>
+        </div>
+
+        <div class="skills-groups">
+          <div class="skills-group">
+            <h3 class="skills-group-title">Design Tools</h3>
+            <ul class="skills-row reveal" data-reveal>
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/figma.svg" alt="Figma">
+                </span>
+                <span class="skill-name">Figma</span>
+              </li>
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/photoshop-40.svg" alt="Photoshop">
+                </span>
+                <span class="skill-name">Photoshop</span>
+              </li>
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/illustrator-40.svg" alt="Illustrator">
+                </span>
+                <span class="skill-name">Illustrator</span>
+              </li>
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/indesign.svg" alt="InDesign">
+                </span>
+                <span class="skill-name">InDesign</span>
+              </li>
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/animate.svg" alt="Animate">
+                </span>
+                <span class="skill-name">Animate</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-group-title">Front-end</h3>
+            <ul class="skills-row reveal" data-reveal data-reveal-delay="1">
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/s06.png" alt="HTML5">
+                </span>
+                <span class="skill-name">HTML5</span>
+              </li>
+              <li class="skill-chip">
+                <span class="skill-icon" aria-hidden="true">
+                  <img src="images/s07.png" alt="CSS3">
+                </span>
+                <span class="skill-name">CSS3</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section about" id="about">
+      <div class="container about-inner">
+        <div class="about-media reveal" data-reveal>
+          <img src="images/avatar.png" alt="Wenlin Chen 大頭照" loading="lazy" width="480" height="480" />
+          <span class="about-media-ring" aria-hidden="true"></span>
+        </div>
+
+        <div class="about-content reveal" data-reveal data-reveal-delay="1">
+                    <!-- <h2 class="about-name">About me</h2> -->
+          <p class="eyebrow">👋  I'm Wenlin Chen</p>
+
+                    <!-- <ul class="about-tags">
+            <li>UI/UX</li>
+            <li>Web Design</li>
+       
+            <li>Graphic Design</li>
+
+          </ul> -->
+          <p class="about-bio">我是一名具備多元專案經驗的設計師，專注於 UI/UX、網頁與視覺設計，熟悉 HTML/CSS 前端基礎，並能運用 AI 輔助概念發想、設計迭代與網頁實作。擅長從使用者角度梳理需求，打造兼具質感與易用性的數位介面，也具備良好的跨職能溝通與協作能力，在視覺表現、使用體驗與實際需求之間取得平衡。</p>
+
+
+
+          <div class="about-actions">
+            <a href="mailto:cwen0122@gmail.com" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Say Hello
+            </a>
+            <!-- <a href="#" class="btn btn-outline">Download CV</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a  class="logo logo-footer">
+        <p class="footer-copy">&copy; <span id="year">2026</span> Wenlin Chen. All rights reserved.</p>
+      </a>
+
+      <ul class="footer-social">
+        <li><a href="mailto:cwen0122@gmail.com" aria-label="Email">Email</a></li>
+        <li><a href="https://www.behance.net/cwen0122600d" aria-label="Behance" target="_blank" rel="noopener">Behance</a></li>
+
+      </ul>
+
+      
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到頂部">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

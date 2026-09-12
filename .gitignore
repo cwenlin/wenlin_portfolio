@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Design source files (not used by the live site — safe to keep local-only)
+*.psd
+*.fla
+
+# Editor/OS junk
+Thumbs.db

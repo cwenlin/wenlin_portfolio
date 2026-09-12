@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mother’s Day Interactive E-Card | Wenlin Chen Design Portfolio</title>
+  <meta name="description" content="Digital Media Design — T-FORCE BFCM 活動影音案例，概念發想與視覺設計。" />
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <!-- ============ Scroll progress bar ============ -->
+  <!-- <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div> -->
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html#top" class="logo" aria-label="回到首頁">
+        <img class="logo-mark" src="images/wlc.png" alt="WLC">
+        <span class="logo-text">Design Portfolio</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主選單">
+        <ul>
+          <li><a href="../index.html#work" class="nav-link">Work</a></li>
+          <li><a href="../index.html#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../Resume/Wenlin%20Chen_Resume.pdf" class="btn btn-primary btn-sm" download="Wenlin Chen_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Resume</a>
+        <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Case hero ============ -->
+    <section class="case-hero">
+      <div class="container">
+        <!-- <a class="back-link reveal" data-reveal href="../index.html#work">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to Work
+        </a> -->
+
+        <h1 class="case-title reveal" data-reveal data-reveal-delay="1">Mother’s Day E-Card Design</h1>
+
+        <p class="case-desc reveal" data-reveal data-reveal-delay="2">
+          為太平洋房屋打造母親節電子賀卡，作為業務人員向客戶傳遞節日祝福的品牌溝通媒介，並透過溫馨活潑的視覺與動態效果提升吸引力，讓祝福更具記憶點。
+        </p>
+
+        <p class="case-role reveal" data-reveal data-reveal-delay="3">
+          <span class="case-role-label">Role</span>
+          概念發想、視覺設計、動態設計與製作
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ Video stack ============ -->
+    <section class="video-section">
+      <div class="container">
+        <div class="video-stack">
+
+          <figure class="video-item reveal" data-reveal>
+            <div class="ecard-frame ecard-frame--wide" id="ecardFrame">
+              <iframe class="ecard-embed" src="ecard_01/ecard_1920x1080.html" title="太平洋房屋母親節祝福 e-card KV 動畫" loading="lazy" width="1920" height="1080" data-native-width="1920" data-native-height="1080"></iframe>
+            </div>
+
+          </figure>
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a  class="logo logo-footer">
+        <p class="footer-copy">&copy; <span id="year">2026</span> Wenlin Chen. All rights reserved.</p>
+      </a>
+
+      <ul class="footer-social">
+        <li><a href="mailto:cwen0122@gmail.com" aria-label="Email">Email</a></li>
+        <li><a href="https://www.behance.net/cwen0122600d" aria-label="Behance" target="_blank" rel="noopener">Behance</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到頂部">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

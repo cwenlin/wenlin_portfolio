@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wenlin Chen | Pet Care App</title>
+<meta name="description" content="Pet Care App 設計案例：從 User Flow、Wireframe 到視覺規範與元件庫，完整的寵物照護行動應用程式 UI/UX 設計流程。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="../index.html#top" class="logo" aria-label="回到首頁">
+      <img class="logo-mark" src="images/wlc.png" alt="WLC">
+      <span class="logo-text">Design Portfolio</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主選單">
+      <ul>
+        <li><a href="../index.html#work" class="nav-link">Work</a></li>
+        <li><a href="../index.html#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="../Resume/Wenlin%20Chen_Resume.pdf" class="btn btn-primary btn-sm" download="Wenlin Chen_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+<section class="hero">
+    <div class="container">
+      <h1 class="hero-title reveal">App Design – Pet Care</h1>
+      <p class="hero-desc reveal reveal-delay-1">Pet Care 是一款陪伴毛孩日常生活的照護 App，整合健康紀錄、日常提醒與照護知識，讓飼主更輕鬆掌握寵物的生活與健康狀況。</p>
+      <div class="meta-row reveal reveal-delay-2">
+        <div class="meta-item">
+          <div class="meta-label">My Role</div>
+          <div class="meta-value">UI Design ·  Design System</div>
+        </div>
+
+        <div class="meta-item">
+          <div class="meta-label">Platform</div>
+          <div class="meta-value">App</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tools</div>
+          <div class="meta-value">Figma</div>
+        </div>
+      </div>
+      <figure class="hero-visual reveal reveal-delay-3">
+        <div class="media-placeholder" style="aspect-ratio:1256/580;">
+          <img src="images/hero-banner.png" alt="Hero Banner（暫時圖片）" loading="lazy">
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 設計挑戰 ============ -->
+  <section class="section" id="challenge">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計挑戰</span></div>
+      <h2 class="section-title reveal" data-delay="1">從零開始，定義一款照護型 App</h2>
+      <p class="section-desc reveal" data-delay="2">在還沒有既有系統可以延續的情況下，需要先釐清飼主最在意的痛點，才能決定資訊架構與畫面優先順序。</p>
+
+      <div class="card-grid">
+        <div class="card reveal" data-delay="1">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+            </div>
+            <h3>資訊需要被好好收納</h3>
+          </div>
+          <p>健康紀錄、疫苗提醒、體重追蹤、待辦事項⋯⋯這些資訊如果分散各處，飼主就容易漏掉重要的照護細節。</p>
+        </div>
+        <div class="card reveal" data-delay="2">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c-5-4-8-7.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 3.5-3 7-8 11a1.4 1.4 0 0 1-2 0Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>寵物種類多元，需要彈性分類</h3>
+          </div>
+          <p>從狗貓到鳥、魚、兔子、爬蟲類，不同寵物需要不同的內容與版面配置，分類邏輯必須保有足夠彈性。</p>
+        </div>
+        <div class="card reveal" data-delay="3">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M8 12.5c1 1.5 2.5 2.5 4 2.5s3-1 4-2.5M9 9.5h.01M15 9.5h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>建立溫暖且值得信賴的體驗</h3>
+          </div>
+          <p>面對每天照顧毛孩的飼主，介面需要傳達溫暖與安心感，而不只是一套冷冰冰的管理工具。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============ 專案總覽 About ============ -->
+  <!-- <section class="section" id="overview"> -->
+    <section class="section section-alt" id="other-projects">
+
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>專案總覽</span></div>
+      <h2 class="section-title reveal" data-delay="1">為毛孩打造的貼身照護夥伴</h2>
+      <p class="section-desc reveal" data-delay="2">從飼主的日常需求出發，整理常見的照護問題並規劃對應功能，讓操作更直覺、資訊更好管理。</p>
+
+      <div class="about-grid">
+        <div class="about-list reveal" data-delay="1">
+          <div class="about-point">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.7"/><path d="M5 20c1.2-3.8 4.2-6 7-6s5.8 2.2 7 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <div><h4>彈性的會員系統</h4><p>支援 Email 註冊，也能透過 Facebook、Google、Apple 快速登入。</p></div>
+          </div>
+          <div class="about-point">
+            <div class="icon-badge">
+                            <svg
+  width="38"
+  height="34"
+  viewBox="0 0 39 36"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M28.3205 24.9415C29.6665 27.3856 30.3008 28.6833 30.3008 30.0369C30.3008 32.7101 28.5794 34.0063 26.2603 34.0063C25.238 34.0063 24.5782 34.0048 22.9105 33.0041C22.9105 33.0041 21.8299 31.8637 19.3011 31.9808C16.7488 31.8644 15.6676 33.0185 15.6676 33.0185C13.9998 34.0184 13.3636 34.0078 12.3426 34.0078C10.0236 34.0078 8.3008 32.7132 8.3008 30.0384C8.3008 28.6848 8.93709 27.3887 10.2824 24.943C10.2824 24.943 12.8256 20.0719 15.0293 17.7804C16.6217 16.1268 18.9433 16.1328 18.9433 16.1328H19.6596C19.6596 16.1328 22.0828 16.1253 23.5756 17.7804C25.7112 20.1551 28.3205 24.9415 28.3205 24.9415Z"
+    stroke="currentColor"
+    stroke-width="3"
+  />
+
+  <ellipse
+    cx="2.94141"
+    cy="3.97464"
+    rx="2.94141"
+    ry="3.97464"
+    transform="matrix(0.884003 -0.467482 0.410239 0.911978 0.300781 13.3828)"
+    stroke="currentColor"
+    stroke-width="3"
+  />
+
+  <ellipse
+    cx="2.94141"
+    cy="3.97464"
+    rx="2.94141"
+    ry="3.97464"
+    transform="matrix(0.884003 0.467482 -0.410239 0.911978 33.0234 10.6328)"
+    stroke="currentColor"
+    stroke-width="3"
+  />
+
+  <ellipse
+    cx="3.66828"
+    cy="5.54044"
+    rx="3.66828"
+    ry="5.54044"
+    transform="matrix(0.989655 -0.143465 0.103441 0.994636 9.30078 2.38281)"
+    stroke="currentColor"
+    stroke-width="3"
+  />
+
+  <ellipse
+    cx="3.66828"
+    cy="5.54043"
+    rx="3.66828"
+    ry="5.54043"
+    transform="matrix(0.989687 0.143244 -0.103601 0.994619 22.8555 1.00781)"
+    stroke="currentColor"
+    stroke-width="3"
+  />
+</svg>
+             </div>
+            <div><h4>依寵物類型瀏覽</h4><p>
+              考量不同寵物的資訊需求，分別規劃對應內容，讓使用者快速切換並找到所需資訊。</p></div>
+          </div>
+          <div class="about-point">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M4.5 12.5h3l1.6-3.4 2.4 6 1.6-4.2 1 1.6h4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><h4>健康與生活紀錄</h4><p>體重曲線、疫苗接種、晶片編號、寵物筆記統一收納在同一份檔案。
+              
+            </p></div>
+          </div>
+          <div class="about-point">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5.5" width="16" height="14.5" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M4 10h16M8 3.5v3M16 3.5v3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <div><h4>行事曆與提醒</h4><p>以月曆檢視每日待辦，餵藥、洗澡、刷牙提醒不再遺漏。</p></div>
+          </div>
+                    <div class="about-point">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.7"/>
+              <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+
+            </div>
+            <div><h4>搜尋與通知</h4><p>熱門搜尋詞與分類標籤協助快速找到照護知識，通知列表統一管理提醒訊息。</p></div>
+          </div>
+        </div>
+        <figure class="about-figure reveal reveal-delay-2">
+          <img src="images/about-photos.png" alt="Pet Care App 品牌識別：App Icon 與主畫面示意">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 設計流程 / User Flow ============ -->
+  <section class="section section-dark" id="flow">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計流程</span></div>
+      <h2 class="section-title reveal" data-delay="1">先畫清楚 User Flow，再進入架構規劃</h2>
+      <p class="section-desc reveal" data-delay="2">在動手畫介面之前，先用 User Flow 釐清帳號系統、寵物檔案與行事曆之間的關係，確保每個畫面的存在都有明確的任務。</p>
+
+      <div class="flow-grid">
+        <figure class="flow-figure reveal reveal-delay-2">
+          <img src="images/userflow.png" alt="Pet Care App User Flow 使用者流程圖">
+        </figure>
+
+        <div class="flow-steps">
+          <div class="flow-step reveal" data-delay="1">
+            <div class="step-idx">1</div>
+            <div><h4>註冊 / 登入</h4><p>提供 Email 註冊與第三方登入兩種路徑，降低新用戶的進入門檻。</p></div>
+          </div>
+          <div class="flow-step reveal" data-delay="2">
+            <div class="step-idx">2</div>
+            <div><h4>選擇寵物類型</h4><p>依飼養的寵物切換對應的健康知識與功能內容。</p></div>
+          </div>
+          <div class="flow-step reveal" data-delay="3">
+            <div class="step-idx">3</div>
+            <div><h4>建立寵物檔案</h4><p>填寫基本資料，建立專屬的 Pet Portfolio 檔案卡。</p></div>
+          </div>
+          <div class="flow-step reveal" data-delay="4">
+            <div class="step-idx">4</div>
+            <div><h4>追蹤與提醒</h4><p>Dashboard 記錄體重變化，Scheduled 排定每日待辦事項。</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 架構規劃/ Wireframe ============ -->
+  <section class="section" id="screens">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>架構規劃</span></div>
+      <h2 class="section-title reveal" data-delay="1">資訊架構與 Wireframe</h2>
+      <p class="section-desc reveal" data-delay="2">依照 User Flow 逐一規劃對應頁面，透過 Wireframe 梳理並驗證資訊層級、內容配置與使用動線，建立清晰且連貫的網站架構，為後續介面設計奠定基礎。</p>
+
+      <figure class="screens-figure reveal reveal-delay-2">
+        <img src="images/wireframes.png" alt="Pet Care App 十大核心畫面 Wireframe">
+      </figure>
+
+
+    </div>
+  </section>
+
+  <!-- ============ UI 畫面（沿用 petcare 舊版原始區塊結構，移除失效連結，動態改用站內 reveal + hover-grow）============ -->
+  <div class="two">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>介面視覺</span></div>
+      <h2 class="section-title reveal" data-delay="1">從線框到高保真，逐步完成的介面設計</h2>
+      <p class="section-desc reveal" data-delay="2">依照使用者流程，將先前規劃的 Wireframe 逐一實現為帶有品牌色彩與插畫細節的完整畫面，呈現從帳號、首頁、搜尋到寵物檔案與行事曆的完整視覺樣貌。</p>
+        <div class="rowcable4">
+      <div class="sponsor1">
+        <p>
+        <img src="images/A.png" class="hvr-grow reveal" data-delay="1" alt="Onboarding 歡迎畫面">
+        <img src="images/B.png" class="hvr-grow reveal" data-delay="2" alt="註冊畫面">
+        <img src="images/c.png" class="hvr-grow reveal" data-delay="3" alt="登入畫面">
+        <img src="images/D.png" class="hvr-grow reveal" data-delay="1" alt="選擇寵物類型">
+        <img src="images/E.png" class="hvr-grow reveal" data-delay="2" alt="首頁畫面">
+        <img src="images/F.png" class="hvr-grow reveal" data-delay="3" alt="搜尋畫面">
+        <img src="images/G.png" class="hvr-grow reveal" data-delay="1" alt="帳號畫面">
+        <img src="images/H.png" class="hvr-grow reveal" data-delay="2" alt="寵物檔案畫面">
+        <img src="images/I.png" class="hvr-grow reveal" data-delay="3" alt="行事曆畫面">
+        </p>
+      </div>
+    </div>
+    
+    </div>
+
+
+  </div>
+
+  <!-- ============ 操作示範 / Demo Video  ============ -->
+     <section class="section section-dark">
+  <!-- <section class="section section-alt"> -->
+    <div class="container">
+      <div class="split split-reverse">
+<div class="demo-frame reveal reveal-delay-2">
+        <video class="demo-video" poster="images/demo-poster.jpg" autoplay="" muted="" loop="" playsinline="" controls="">
+          <source src="video/pet-care-demo01.mp4" type="video/mp4">
+          <source src="video/pet-care-demo01.mov" type="video/quicktime">
+        </video>
+        <svg class="paw-float" style="right:8px; top:60px; animation-delay:.8s;" viewBox="0 0 118 127" fill="none"><path d="M59.2979 60.9532C59.2979 60.9532 67.04 64.8922 69.3112 72.1938C72.5503 82.6596 73.6716 100.984 73.6716 100.984C74.2871 110.363 74.3574 115.211 72.3205 119.187C68.2976 127.04 60.8554 128.034 53.4573 124.244C50.1963 122.574 48.0935 121.491 44.2794 115.826C44.2794 115.826 42.5484 110.709 34.3052 106.921C26.3651 102.423 21.1869 104.019 21.1519 104.03C14.327 104.242 12.3129 103.171 9.05594 101.502C1.65799 97.7122 -1.88925 91.0938 2.13558 83.2371C4.17263 79.261 8.1531 76.4927 16.1253 71.5073C16.1698 71.4781 31.5835 61.3512 42.0471 58.226C49.6155 55.9709 57.0138 59.783 57.0138 59.783L59.2979 60.9532ZM95.8648 76.2119C102.908 70.7239 111.815 70.7106 115.759 76.182C119.704 81.6535 117.192 90.5374 110.149 96.0255C103.106 101.514 94.199 101.527 90.2546 96.0554C86.3106 90.5839 88.8222 81.6999 95.8648 76.2119ZM12.844 22.1019C19.589 22.1069 24.7817 29.3437 24.4421 38.2659C24.1024 47.188 18.3589 54.4174 11.614 54.4126C4.86911 54.4077 -0.323523 47.1707 0.0159508 38.2487C0.355654 29.3265 6.09899 22.097 12.844 22.1019ZM61.9257 0.600451C69.9235 3.37758 72.8122 14.9977 68.3785 26.5549C63.9447 38.1121 53.8672 45.2302 45.8692 42.4534C37.8711 39.6766 34.9817 28.056 39.4155 16.4986C43.8494 4.94133 53.9277 -2.17641 61.9257 0.600451ZM80.5819 31.9806C87.3734 21.6315 98.4948 17.1876 105.422 22.0548C112.349 26.9224 112.46 39.2588 105.668 49.608C98.8768 59.9568 87.7557 64.4001 80.8285 59.533C73.9013 54.6655 73.7905 42.3298 80.5819 31.9806Z" fill="#393939"/></svg>
+      </div>
+        <div class="split-text reveal" data-delay="1">
+          <div class="fig-tag reveal is-visible"><span>操作示範</span></div>
+          <h2 class="section-title">實際操作畫面</h2>
+          <p class="section-desc">透過短片呈現核心操作流程，從啟動畫面、註冊登入，到瀏覽首頁、開啟寵物檔案卡與查看每日待辦，完整展示主要功能與使用體驗。 </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 設計系統 / 元件庫 ============ -->
+  <section class="section section-alt" id="visual">
+
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計系統</span></div>
+      <h2 class="section-title reveal" data-delay="1">建立可延展的元件庫</h2>
+      <p class="section-desc reveal" data-delay="2">把輸入框、選單、Tab、行事曆、按鈕等常用介面整理成統一規範的元件庫，確保新增畫面時能維持一致的操作邏輯與視覺語言。</p>
+
+      <div class="ui-library reveal reveal-delay-2">
+        <section class="card card--blue card--shadow">
+       
+          <div class="placeholder placeholder--radius">
+            <img src="images/design-system.png" alt="Border Radius preview">
+          </div>
+          <!-- <div class="clear fm-space"></div> -->
+        </section>
+      </div>
+
+      <!-- <div class="stats-row">
+        <div class="stat-pill reveal" data-delay="1">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-pill-label">個核心畫面</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="2">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-pill-label">組元件規範</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="3">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="16" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="16" r="3.2" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-pill-label">個品牌色彩</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="4">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c-5-4-8-7.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 3.5-3 7-8 11a1.4 1.4 0 0 1-2 0Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-pill-label">種寵物分類</span>
+          </span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ============ 視覺規範 / Typography & Colors ============ -->
+  <section class="section section-dark">
+
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>視覺規範</span></div>
+      <h2 class="section-title reveal" data-delay="1">溫暖鮮明的品牌色彩與字體系統</h2>
+      <p class="section-desc reveal" data-delay="2">以 Poppins 作為主要字體，搭配黃橘色調與少量對比色，打造兼具專業感與親和力的介面風格。</p>
+
+      <figure class="visual-figure reveal reveal-delay-2">
+        <img src="images/typography-colors.jpg" alt="Pet Care App Typography：Poppins 字體與品牌色彩">
+      </figure>
+
+      <div class="color-grid">
+        <div class="color-swatch reveal" data-delay="1">
+          <div class="swatch-fill" style="background:#FFC700"></div>
+          <div class="swatch-info">
+            <!-- <div class="swatch-name">主色 · 亮黃</div> -->
+            <div class="swatch-code">#FFC700</div></div>
+        </div>
+        <div class="color-swatch reveal" data-delay="1">
+          <div class="swatch-fill" style="background:#FFA200"></div>
+          <div class="swatch-info">
+            <!-- <div class="swatch-name">主色 · 暖橘</div> -->
+          <div class="swatch-code">#FFA200</div></div>
+        </div>
+        <div class="color-swatch reveal" data-delay="2">
+          <div class="swatch-fill" style="background:#3A1400"></div>
+          <div class="swatch-info">
+            <!-- <div class="swatch-name">品牌深棕</div> -->
+          <div class="swatch-code">#3A1400</div></div>
+        </div>
+        <div class="color-swatch reveal" data-delay="2">
+          <div class="swatch-fill" style="background:#96F1F7"></div>
+          <div class="swatch-info"><div class="swatch-code">#96F1F7</div></div>
+        </div>
+        <div class="color-swatch reveal" data-delay="3">
+          <div class="swatch-fill" style="background:#766C66"></div>
+          <div class="swatch-info"><div class="swatch-code">#766C66</div></div>
+        </div>
+                <div class="color-swatch reveal" data-delay="3">
+          <div class="swatch-fill" style="background:#C2C2C2"></div>
+          <div class="swatch-info"><div class="swatch-code">#C2C2C2</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============ 結語 ============ -->
+  <section class="section section-alt closing-visual" id="visual">
+
+    <div class="container">
+      <!-- <p class="closing-text reveal">感謝閱讀這份 Pet Care App 設計案例 —— 從釐清問題、規劃流程，到落實成一致的視覺與元件系統，是這次練習最珍貴的收穫。</p> -->
+      <figure class="closing-figure reveal reveal-delay-1">
+        <img src="images/mascot.jpg" alt="Thanks for watching - 插畫吉祥物">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= More Projects ================= -->
+  <section class="section section-alt" id="other-projects">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Other project</span></div>
+
+      <div class="other-projects-grid">
+                        <a href="../facemewebsite/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/faceme-web.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Web Design</span>
+            <h3>FaceMe 官網設計 - 首頁與產品頁改版</h3>
+          </div>
+        </a>
+
+        <a href="../DesignSystem/index.html" class="project-card reveal is-visible" data-delay="1">
+          <div class="project-thumb"><img src="images/faceme-design-system.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Visual Identity </span>
+            <h3>FaceMe – Design System</h3>
+          </div>
+        </a>
+        <a href="../tforcepage/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/tforce-event.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Event Page Design</span>
+            <h3>T-FORCE - Gaming Brand Event</h3>
+          </div>
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a  class="logo logo-footer">
+      <p class="footer-copy">&copy; <span id="year">2026</span> Wenlin Chen. All rights reserved.</p>
+    </a>
+    <ul class="footer-social">
+      <li><a href="mailto:cwen0122@gmail.com" aria-label="Email">Email</a></li>
+      <li><a href="https://www.behance.net/cwen0122600d" aria-label="Behance" target="_blank" rel="noopener">Behance</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到頂部">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

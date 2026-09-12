@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wenlin Chen | T-FORCE - Gaming Brand Event</title>
+<meta name="description" content="T-FORCE 電競品牌活動頁設計案例：從素材整理、資訊架構到視覺規範與響應式切版，重新梳理一個橫跨記憶體、SSD 與週邊產品線的品牌活動頁。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="../index.html#top" class="logo" aria-label="回到首頁">
+      <img class="logo-mark" src="images/wlc.png" alt="WLC">
+      <span class="logo-text">Design Portfolio</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主選單">
+      <ul>
+        <li><a href="../index.html#work" class="nav-link">Work</a></li>
+        <li><a href="../index.html#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="../Resume/Wenlin%20Chen_Resume.pdf" class="btn btn-primary btn-sm" download="Wenlin Chen_Resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Resume</a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title reveal">T-FORCE - Gaming Brand Event</h1>
+      <p class="hero-desc reveal reveal-delay-1">T-FORCE 是 TEAMGROUP 旗下專為電競玩家打造的品牌，產品線涵蓋記憶體、SSD 與週邊配件。這次專案重新梳理品牌活動頁的內容架構與視覺語彙，打造更具品牌特色且流暢易讀的瀏覽體驗。</p>
+      <div class="meta-row reveal reveal-delay-2">
+        <div class="meta-item">
+          <div class="meta-label">My Role</div>
+          <div class="meta-value">UI/UX design ·  HTML/CSS (RWD)</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Team Member</div>
+          <div class="meta-value">PM </div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Platform</div>
+          <div class="meta-value">Desktop web · Mobile web</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tools</div>
+          <div class="meta-value">Figma ·  VS Code</div>
+        </div>
+      </div>
+      <figure class="hero-visual reveal reveal-delay-3">
+        <div class="media-placeholder" style="aspect-ratio:1256/580;">
+          <img src="images/hero-banner.png" alt="Hero Banner（暫時圖片）" loading="lazy">
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 設計挑戰 ============ -->
+  <section class="section section-wh" id="challenge">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計挑戰</span></div>
+      <h2 class="section-title reveal" data-delay="1">在強烈視覺風格下保持清晰易讀</h2>
+      <p class="section-desc reveal" data-delay="2">電競品牌活動頁需要兼顧氣氛與資訊傳遞，這次的重點是找到霓虹光效、深色背景與商品可讀性之間的平衡。</p>
+
+      <div class="card-grid">
+        <div class="card reveal" data-delay="1">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+            </div>
+            <h3>多產品線的資訊整合</h3>
+          </div>
+          <p>從記憶體、SSD 到週邊配件，橫跨五大產品分類的內容需要在同一頁面裡清楚分層，讓玩家能快速找到想看的商品。</p>
+        </div>
+        <div class="card reveal" data-delay="2">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>電競感與可讀性的平衡</h3>
+          </div>
+          <p>霓虹光效、深色背景與高對比色塊容易搶走注意力，如何在強烈風格下仍維持商品資訊的易讀性是這次的重點課題。</p>
+        </div>
+        <div class="card reveal" data-delay="3">
+          <div class="card-head">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6v6c0 5 3.4 8.5 8 9.9C16.6 20.5 20 17 20 12V6l-8-3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>建立值得信賴的品牌調性</h3>
+          </div>
+          <p>鎖定電競玩家客群，頁面需要傳達專業與性能感，同時保留足夠的品牌識別度與吸引力，不流於單純的特效堆疊。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌介紹 About ============ -->
+  <!-- <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>品牌介紹</span></div>
+      <h2 class="section-title reveal" data-delay="1">為電競玩家打造的品牌活動頁</h2>
+      <p class="section-desc reveal" data-delay="2">T-FORCE 是一個品牌介紹與推薦型的網站，致力於開發專為電競玩家量身打造的專業級記憶體、SSD 等產品系列。這次的活動頁串連品牌識別、產品陣容與視覺風格，讓玩家能在同一個頁面快速認識品牌並找到想要的商品。</p>
+
+      <div class="about-grid">
+        <div class="about-list reveal" data-delay="1">
+          <div class="about-point">
+            <span class="idx dot-1">1</span>
+            <div><h4>首頁輪播主視覺</h4><p>兩組輪播主視覺，分別導向當期主打的記憶體與 SSD 新品。</p></div>
+          </div>
+          <div class="about-point">
+            <span class="idx dot-2">2</span>
+            <div><h4>五大產品分類</h4><p>Memory / SSD / Peripherals / Card / USB Drives，以霓虹圖示快速導覽。</p></div>
+          </div>
+          <div class="about-point">
+            <span class="idx dot-3">3</span>
+            <div><h4>人氣精選商品</h4><p>四款熱門商品組成 Our Favorite 專區，強化重點曝光。</p></div>
+          </div>
+          <div class="about-point">
+            <span class="idx dot-4">4</span>
+            <div><h4>深色電競視覺語彙</h4><p>以暗色背景搭配紅色漸層與霓虹光暈，凸顯產品的性能感。</p></div>
+          </div>
+        </div>
+        <div class="about-photos reveal reveal-delay-2">
+          <figure><img src="images/product-xtreem-ddr5.jpg" alt="T-FORCE XTREEM DDR5 Narvik Black 桌上型記憶體"></figure>
+          <figure><img src="images/product-delta-rgb.jpg" alt="T-FORCE DELTA RGB DDR5 桌上型記憶體"></figure>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ============ 設計流程（深色） ============ -->
+  <section class="section section-dark" id="flow">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>設計流程</span></div>
+      <h2 class="section-title reveal" data-delay="1">從素材整理到版面重新編排</h2>
+      <p class="section-desc reveal" data-delay="2">先盤點既有的品牌素材與產品線，再依內容重要性重新規劃版面段落與視覺層級，最後才進入響應式切版與細節動態。</p>
+
+
+
+      <div class="flow-steps">
+        <div class="flow-step reveal" data-delay="1">
+          <div class="step-head"><div class="step-idx">1</div>
+          <h4>盤點素材</h4></div>
+          <p>整理輪播、產品照片、圖示與品牌色彩等既有素材，確認可用內容範圍。</p>
+        </div>
+        <div class="flow-step reveal" data-delay="2">
+          <div class="step-head"><div class="step-idx">2</div>
+          <h4>定義視覺調性</h4></div>
+          <p>以紅色霓虹漸層搭配深色背景，建立具速度感與能量感的品牌語彙。</p>
+        </div>
+        <div class="flow-step reveal" data-delay="3">
+          <div class="step-head"><div class="step-idx">3</div>
+          <h4>規劃版面段落</h4></div>
+          <p>從主視覺、精選商品到產品分類，重新安排資訊優先順序與段落節奏。</p>
+        </div>
+        <div class="flow-step reveal" data-delay="4">
+          <div class="step-head"><div class="step-idx">4</div>
+          <h4>響應式切版</h4></div>
+          <p>確保 Desktop / Tablet / Mobile 都能維持一致的閱讀節奏與互動細節。</p>
+        </div>
+      </div>
+            <figure class="flow-figure reveal reveal-delay-2">
+        <img src="images/flow-visual.jpg" alt="T-FORCE DELTA RGB DDR5 品牌形象視覺">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 頁面設計 / 瀏覽器視窗模擬 ============ -->
+  <section class="section section-dark" id="screens">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Final Interface</span></div>
+      <!-- <h2 class="section-title reveal" data-delay="1">建立可延展的元件庫</h2> -->
+      <!-- <p class="section-desc reveal" data-delay="2">把輸入框、選單、Tab、行事曆、按鈕等常用介面整理成統一規範的元件庫，確保新增畫面時能維持一致的操作邏輯與視覺語言。</p> -->
+
+      <div class="ui-library reveal reveal-delay-2 is-visible">
+        <section class="card card--blue card--shadow">
+
+          <div class="placeholder placeholder--radius">
+            <img src="images/screens-visual.png" alt="Border Radius preview">
+          </div>
+          <!-- <div class="clear fm-space"></div> -->
+        </section>
+      </div>
+
+      <!-- <div class="stats-row">
+        <div class="stat-pill reveal" data-delay="1">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-pill-label">個核心畫面</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="2">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-pill-label">組元件規範</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="3">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="8" cy="16" r="3.2" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="16" r="3.2" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-pill-label">個品牌色彩</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="4">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c-5-4-8-7.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 3.5-3 7-8 11a1.4 1.4 0 0 1-2 0Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-pill-label">種寵物分類</span>
+          </span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+    <!-- ============ 產品分類 ============ -->
+  <section class="section section-dark" id="category">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Responsive Design – Mobile View</span></div>
+      <!-- <h2 class="section-title reveal" data-delay="1">五大分類，快速找到需要的裝備</h2>
+      <p class="section-desc reveal" data-delay="2">以霓虹線條圖示定義每個產品類別，讓玩家能依需求快速切換瀏覽記憶體、SSD、週邊、顯示卡與隨身碟。</p> -->
+
+      <figure class="flow-figure reveal reveal-delay-2">
+        <img src="images/mobile.png" alt="T-FORCE DELTA RGB DDR5 品牌形象視覺">
+      </figure>
+
+
+    </div>
+  </section>
+
+  <!-- ============ 主打商品 + 專案數據 ============ -->
+  <!-- <section class="section section-alt" id="highlights">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>主打商品</span></div>
+      <h2 class="section-title reveal" data-delay="1">四款人氣商品，強化重點曝光</h2>
+      <p class="section-desc reveal" data-delay="2">從全站商品中挑選四款詢問度最高的品項，以放大商品攝影搭配簡短命名，快速建立第一印象。</p>
+
+      <div class="product-grid">
+        <div class="product-card reveal" data-delay="1">
+          <div class="product-thumb"><img src="images/product-siren-aio.jpg" alt="SIREN DUO360 AIO ARGB CPU 液冷散熱器"></div>
+          <div class="product-info">
+            <span class="product-tag">Cooling</span>
+            <h4>SIREN DUO360 AIO ARGB<br>液冷散熱器</h4>
+          </div>
+        </div>
+        <div class="product-card reveal" data-delay="2">
+          <div class="product-thumb"><img src="images/product-xtreem-ddr5.jpg" alt="XTREEM DDR5 Narvik Black 桌上型記憶體"></div>
+          <div class="product-info">
+            <span class="product-tag">Memory</span>
+            <h4>XTREEM DDR5<br>桌上型記憶體</h4>
+          </div>
+        </div>
+        <div class="product-card reveal" data-delay="3">
+          <div class="product-thumb"><img src="images/product-delta-rgb.jpg" alt="DELTA RGB DDR5 桌上型記憶體"></div>
+          <div class="product-info">
+            <span class="product-tag">Memory</span>
+            <h4>DELTA RGB DDR5<br>桌上型記憶體</h4>
+          </div>
+        </div>
+        <div class="product-card reveal" data-delay="4">
+          <div class="product-thumb"><img src="images/product-z540-ssd.jpg" alt="Z540 M.2 PCIe Gen5 SSD 固態硬碟"></div>
+          <div class="product-info">
+            <span class="product-tag">SSD</span>
+            <h4>Z540 M.2 PCIe SSD<br>Gen5 固態硬碟</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-pill reveal" data-delay="1">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-pill-label">大產品分類</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="2">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 21h8M12 19v2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-pill-label">組主視覺輪播</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="3">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c-5-4-8-7.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 3.5-3 7-8 11a1.4 1.4 0 0 1-2 0Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-pill-label">款主打商品</span>
+          </span>
+        </div>
+        <div class="stat-pill reveal" data-delay="4">
+          <span class="stat-pill-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="stat-pill-text">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-pill-label">支介紹影片</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- ============ 視覺規範 ============ -->
+  <section class="section section-alt" id="visual">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Typography & Color Style Guide</span></div>
+      <!-- <h2 class="section-title reveal" data-delay="1">紅色霓虹漸層與深色電競語彙</h2> -->
+      <p class="section-desc reveal" data-delay="2">選用俐落且具張力的字體，搭配紅色漸層與深色基調，塑造鮮明且充滿速度感的電競視覺。</p>
+
+      <div class="bebas-guide reveal reveal-delay-2">
+        <div class="top-row">
+          <div class="dark-card">
+            <div class="image-frame">
+              <img src="images/bebas-placeholder.png" alt="Placeholder image" class="placeholder-img">
+            </div>
+          </div>
+          <div class="info-card">
+            <p>Bebas Neue is a display family suitable for headlines, captions, and packaging, designed by Ryoichi Tsunekawa. It's based on the original Bebas typeface. The family is suitable for pro users due to its extended character set and OpenType features.</p>
+          </div>
+        </div>
+        <div class="palette">
+          <div class="swatch swatch-1">
+            <span class="swatch-label">#FFA0A0</span>
+          </div>
+          <div class="swatch swatch-2">
+            <span class="swatch-label">#C50010</span>
+          </div>
+          <div class="swatch swatch-3 swatch-multi">
+            <span class="swatch-label">#FE3C3C</span>
+            <span class="swatch-label">#B2011E</span>
+          </div>
+          <div class="swatch swatch-4 swatch-multi">
+            <span class="swatch-label">#FF684A</span>
+            <span class="swatch-label">#D51A1F</span>
+          </div>
+          <div class="swatch swatch-5">
+            <span class="swatch-label">#5B0616</span>
+          </div>
+          <div class="swatch swatch-6">
+            <span class="swatch-label">#212529</span>
+          </div>
+          <div class="swatch swatch-7">
+            <span class="swatch-label">#0B0C0E</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ============ 結語 ============ -->
+<section class="section section-dark" id="closing">
+  <!-- <section class="closing"> -->
+
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>結語</span></div>
+      <p class="closing-text reveal">從視覺設計、素材整理、版面規劃到響應式切版，這次專案讓我更熟悉如何在強烈的視覺風格與清晰的資訊呈現之間取得平衡，也進一步累積了對視覺節奏與細節掌控的經驗。</p>
+
+      <div class="closing-mark">
+
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Other Projects ================= -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="fig-tag reveal is-visible"><span>Other project</span></div>
+
+      <div class="other-projects-grid">
+                        <a href="../facemewebsite/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/faceme-web.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Web Design</span>
+            <h3>FaceMe 官網設計 - 首頁與產品頁改版</h3>
+          </div>
+        </a>
+
+        <a href="../DesignSystem/index.html" class="project-card reveal is-visible" data-delay="1">
+          <div class="project-thumb"><img src="images/faceme-design-system.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">Visual Identity </span>
+            <h3>FaceMe – Design System</h3>
+          </div>
+        </a>
+                <a href="../petcareapp/index.html" class="project-card reveal is-visible" data-delay="2">
+          <div class="project-thumb"><img src="images/petcare-app.png" alt="AirCeiling Landing Page Design" loading="lazy"></div>
+          <div class="project-info">
+            <span class="project-tag">App Design</span>
+            <h3>Pet Care App</h3>
+          </div>
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a  class="logo logo-footer">
+      <p class="footer-copy">&copy; <span id="year">2026</span> Wenlin Chen. All rights reserved.</p>
+    </a>
+    <ul class="footer-social">
+      <li><a href="mailto:cwen0122@gmail.com" aria-label="Email">Email</a></li>
+      <li><a href="https://www.behance.net/cwen0122600d" aria-label="Behance" target="_blank" rel="noopener">Behance</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到頂部">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
